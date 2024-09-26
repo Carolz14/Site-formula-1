@@ -149,7 +149,7 @@ footer p {
     align-items: center;
     width: 50%;
     height: 50%;
-    position: relative;
+    
 }
 
 .text {
@@ -159,11 +159,6 @@ footer p {
 
 
 h2 {
-    background-color: rgba(0, 0, 0);
-    position: absolute;
-    right: 0;
-    bottom: 175px;
-    left: 132px;
     font-family: "Orbitron", sans-serif;
     color: white;
     font-size: 36px;
