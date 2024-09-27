@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*menu*/
+
+header{
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-right:10% ;
+    margin-left: 10%;
+}
+
+#img-cabeçalho {
+    width: 150px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header .navbar ul li{
+list-style: none;
+position: relative;
+float: left;
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:white;
+    display: block;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+header .navbar ul li a:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header .navbar ul li a:hover::after {
+    width: 100%;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    width: 200px;
+    background: #000000;
+    display: none;
+    z-index: 1000;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:focus-within> ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+
+
+body {
+    background-color: black;
+}
+
+#principal {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+    
+}
+
+
+/* textos*/
+li {
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size:45px;
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+
+h2{
+    font-family: "Orbitron", sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 5%;
+    text-align: center;
+}
+p {
+    font-family: "Radio Canada", sans-serif;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    padding-top: 2%;
+    text-align: center;
+}
+
+
+
+/* footer*/
+footer{
+    border-top: 0.4px solid white;
+}
+
+#footer{
+    margin: 20px;
+    font-size: 16px;
+    color: white;
+    text-align: justify;
+}
+
+
+/* cards */
+
+#cartoes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-left: 5%;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    align-items: center;
+}
+
+.card:hover .flip {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.flip {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.frente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(139, 139, 139, 0.349);
+}
+
+.tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(209, 209, 209, 0.541);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fc2110;
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
