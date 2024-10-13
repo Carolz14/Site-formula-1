@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="geral.css">
     <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 
     <header>
         <img id="img-cabeçalho" src="icon.png">
-
+        <span id="alterna-menu" class="hamburger"><span>☰</span></span>
         <nav class="navbar">
             <ul>
                 <li> <a href="index.html">Início</a> </li>
@@ -65,7 +67,7 @@
     <main id="principal">
         <section id="principal-texto">
             <div>
-                <h1 class="texto-branco"> O que é Formula 1?</h1>
+                <h1> O que é Formula 1?</h1>
                 <p> Inaugurada em 1950, a Fórmula 1 é uma categoria do automobilismo onde 10 equipes e 20 pilotos
                     competem em busca da vitória do campeonato de construtores e pilotos, respectivamente. Nos dias de
                     hoje, a temporada anual passa por mais de 20 locais pelo mundo, correndo nos diferentes circuitos
@@ -77,34 +79,37 @@
 
         <section id="equipes">
             <h1 id="titulo-equipe"> Equipes</h1>
-            <button id="botao1"><img src="Imagens-principal/arrow.png"> </button>
 
-            <div class="card">
+            <div id="botao"><button id="botao1"><img src="Imagens-principal/arrow.png"> </button>
 
-                <img src="Imagens-principal/redbull.png" class="img on">
+                <div class="card">
 
-                <img src="Imagens-principal/ferrari.png" class="img">
+                    <img src="Imagens-principal/redbull.png" class="img on">
 
-                <img src="Imagens-principal/mclaren.png " class="img">
+                    <img src="Imagens-principal/ferrari.png" class="img">
 
-                <img src="Imagens-principal/mercedes.png " class="img">
+                    <img src="Imagens-principal/mclaren.png " class="img">
 
-                <img src="Imagens-principal/astonmartin.png " class="img">
+                    <img src="Imagens-principal/mercedes.png " class="img">
 
-                <img src="Imagens-principal/rb.png " class="img">
+                    <img src="Imagens-principal/astonmartin.png " class="img">
 
-                <img src="Imagens-principal/haas.png" class="img">
+                    <img src="Imagens-principal/rb.png " class="img">
 
-                <img src="Imagens-principal/alpine.png" class="img">
+                    <img src="Imagens-principal/haas.png" class="img">
 
-                <img src="Imagens-principal/willians.png" class="img">
+                    <img src="Imagens-principal/alpine.png" class="img">
 
-                <img src="Imagens-principal/stake.png" class="img">
+                    <img src="Imagens-principal/willians.png" class="img">
+
+                    <img src="Imagens-principal/stake.png" class="img">
 
 
+                </div>
+
+                <button id="botao2"><img src="Imagens-principal/arrow.png"> </button>
             </div>
 
-            <button id="botao2"><img src="Imagens-principal/arrow.png"> </button>
 
 
         </section>

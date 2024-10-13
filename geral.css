@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*menu*/
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#img-cabeçalho {
+  width: 150px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header .navbar ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 100;
+}
+
+header .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  z-index: 100;
+}
+
+
+
+header .navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  background: #000000;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#principal {
+  margin-bottom: 48px;
+  border-top: 0.4px solid white;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  background-color: black;
+}
+
+/* textos*/
+li {
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+/* footer*/
+footer {
+  border-top: 0.4px solid white;
+}
+
+footer p {
+  margin: 20px;
+  font-size: 16px;
+  color: white;
+  text-align: justify;
+  font-family: "Radio Canada", sans-serif;
+}
+
+.hamburger {
+  opacity: 0;
+}
+
+@media (max-width: 879px) {
+  header .navbar ul {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    border-radius: 3px;
+    border: 1px solid silver;
+    text-align: center;
+    line-height: 2em;
+    box-sizing: border-box;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.623);
+  }
+
+  .hamburger:hover {
+    border-color: gray;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 10;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid silver;
+    box-shadow: 2px 2px 3px silver;
+    opacity: 0;
+    transition: all 200ms ease-out;
+  }
+
+  header.menu-visivel > .navbar {
+    top: 60px;
+    opacity: 1;
+  }
+
+  header.menu-visivel > main {
+    right: 200px;
+  }
+
+  header.menu-visivel {
+    overflow-x: hidden;
+  }
+
+  header .navbar ul li ul {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background: #000000;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid silver;
+    box-shadow: 2px 2px 3px silver;
+    padding: 0;
+  }
+  header .navbar ul li:focus-within > ul,
+  header .navbar ul li:active > ul {
+    display: initial;
+  }
+  
+  #alterna-menu {
+    margin: 0 0.5em 0 0;
+    cursor: pointer;
+  }
+}

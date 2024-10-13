@@ -36,3 +36,7 @@ function anteriorImg() {
 
 btn2.addEventListener('click', proximaImg);
 btn1.addEventListener('click', anteriorImg);
+
+
+
+
