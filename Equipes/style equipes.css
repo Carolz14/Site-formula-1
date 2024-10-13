@@ -1,89 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*menu*/
-
-header{
-    top:0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    margin-right:10% ;
-    margin-left: 10%;
-}
-
-#img-cabeçalho {
-    width: 150px;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-header .navbar ul li{
-list-style: none;
-position: relative;
-float: left;
-}
-
-header .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color:white;
-    display: block;
-    text-decoration: none;
-    font-family: var(--fonte2);
-}
-
-header .navbar ul li a:after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-header .navbar ul li a:hover::after {
-    width: 100%;
-}
-
-header .navbar ul li ul {
-    position: absolute;
-    right: 20;
-    width: 200px;
-    background: #000000;
-    display: none;
-}
-
-header .navbar ul li ul li{
-    width: 100%;
-}
-
-header .navbar ul li:focus-within> ul,
-header .navbar ul li:hover > ul {
-    display: initial;
-}
-
-
-
-body {
-    background-color: black;
-}
-
-#principal {
-    margin-bottom: 48px;
-    border-top: 0.4px solid white;
-}
-
 #principal-texto {
-    margin-top: 5%;  
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -91,40 +7,12 @@ body {
     align-items: center;
 }
 
-#titulo-equipe {
-    text-align: center;
-    margin-top: 30%;
-}
-
-/* textos*/
-li {
-    font-family: "Orbitron", sans-serif;
-    font-size: 18px;
-}
-
 h1 {
-    font-family: "Orbitron", sans-serif;
-    font-size:45px;
-    color: white;
     text-align: center;
-    margin-top:5% ;
+    margin-top: 5%;
 }
 
-
-/* footer*/
-footer{
-    border-top: 0.4px solid white;
-}
-
-footer p{
-    font-family: "Radio Canada", sans-serif;
-    color: white;
-    margin: 20px;
-    font-size: 16px;
-}
-
-
-table{ 
+table {
     margin-right: 5%;
 }
 
@@ -139,6 +27,26 @@ th {
     padding-top: 1%;
 }
 
-img{
+img {
     width: 40%;
+}
+
+@media (max-width: 879px) {
+    #principal-texto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 50%;
+    }
+    img {
+        margin-top: 10%;
+        width: 70%;
+    }
+
+    td,
+    th {
+        font-size: 100%;
+    }
 }
