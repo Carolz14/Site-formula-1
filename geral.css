@@ -91,7 +91,7 @@ footer {
   border-top: 0.4px solid white;
 }
 
-footer p {
+footer p, #link {
   margin: 20px;
   font-size: 16px;
   color: white;
