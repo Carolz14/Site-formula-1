@@ -51,6 +51,76 @@ p {
     text-align: justify;
 }
 
+#principal-w{
+    background-image: linear-gradient(-160deg, rgba(49, 89, 108, 0.068), rgba(49, 89, 108, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-f{
+    background-image: linear-gradient(-160deg, rgba(105, 21, 28, 0.068), rgba(105, 21, 28, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-rb{
+    background-image: linear-gradient(-160deg, rgba(57, 73, 89, 0.068), rgba(57, 73, 89, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+#principal-a{
+    background-image: linear-gradient(-160deg, rgba(41, 73, 98, 0.068), rgba(41, 73, 98, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#principal-s{
+    background-image: linear-gradient(-160deg, rgba(30, 90, 39, 0.068), rgba(30, 90, 39, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-am{
+    background-image: linear-gradient(-160deg, rgba(33, 58, 64, 0.068), rgba(33, 58, 64, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-h{
+    background-image: linear-gradient(-160deg, rgba(43, 46, 56, 0.068), rgba(43, 46, 56, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-m{
+    background-image: linear-gradient(-160deg, rgba(40, 91, 92, 0.068), rgba(40, 91, 92, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-ml{
+    background-image: linear-gradient(-160deg, rgba(119, 66, 37, 0.068), rgba(119, 66, 37, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#principal-r{
+    background-image: linear-gradient(-160deg, rgba(45, 60, 91, 0.068), rgba(45, 60, 91, 0.4));
+    border-top: 0.4px solid white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 @media (max-width: 879px) {
     .equipe {
         display: flex;
