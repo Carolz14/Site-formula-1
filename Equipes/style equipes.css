@@ -1,7 +1,7 @@
 #principal-texto {
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,8 @@ h1 {
 }
 
 table {
-    margin-right: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 td,
