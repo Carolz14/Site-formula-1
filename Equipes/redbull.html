@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Bull Racing</title>
     <link rel="icon" href="../icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
+ 
     <link rel="stylesheet" href="style equipes.css">
     <link rel="stylesheet" href="../geral.css">
     <script src="../menu.js" defer></script>
@@ -16,95 +14,92 @@
 
 <body>
 
-    <header>
+     <header>
         <img id="img-cabeçalho" src="../icon.png">
         <span id="alterna-menu" class="hamburger"><span>☰</span></span>
         <nav class="navbar">
-            <ul>
-                <li> <a href="../index.html">Início</a> </li>
+            <a href="../index.html">Início</a>
 
-                <li> <a href="#equipes">Equipes</a>
-                    <ul>
-                        <li> <a href="redbull.html">Red Bull Racing</a></li>
-                        <li> <a href="ferrari.html">Ferrari</a></li>
-                        <li> <a href="mclaren.html">McLaren</a></li>
-                        <li> <a href="mercedes.html">Mercedes</a></li>
-                        <li> <a href="aston martin.html">Aston Martin</a></li>
-                        <li> <a href="rb.html">RB</a></li>
-                        <li> <a href="haas.html">Haas</a></li>
-                        <li> <a href="alpine.html">Alpine</a></li>
-                        <li> <a href="willians.html">Williams</a></li>
-                        <li> <a href="stake.html">Stake</a></li>
-                    </ul>
-                </li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Equipes</a>
 
-                <li> <a href=""> Pilotos</a>
+                <div class="dropdown-content">
 
-                    <ul>
-                        <li> <a href="../Pilotos/MV & SP.html">Pilotos RBR</a></li>
-                        <li> <a href="../Pilotos/CS & CL.html">Pilotos Ferrari</a></li>
-                        <li> <a href="../Pilotos/LN & OP.html"> Pilotos McLaren</a></li>
-                        <li> <a href="../Pilotos/GR & LH.html">Pilotos Mercedes</a></li>
-                        <li> <a href="../Pilotos/FA & LS.html">Pilotos Aston Martin</a></li>
-                        <li> <a href="../Pilotos/DR & YT & LL.html">Pilotos RB</a></li>
-                        <li> <a href="../Pilotos/KM & NH.html">Pilotos Haas</a></li>
-                        <li> <a href="../Pilotos/EO & PG.html">Pilotos Alpine</a></li>
-                        <li> <a href="../Pilotos/AA & FC & LS.html">Pilotos Williams</a></li>
-                        <li> <a href="../Pilotos/VB & ZG.html">Pilotos Stake</a></li>
-                    </ul>
-                </li>
+                    <a href="../Equipes/redbull.html">Red Bull Racing</a>
+                    <a href="../Equipes/ferrari.html">Ferrari</a>
+                    <a href="../Equipes/mclaren.html">McLaren</a>
+                    <a href="../Equipes/mercedes.html">Mercedes</a>
+                    <a href="../Equipes/aston martin.html">Aston Martin</a>
+                    <a href="../Equipes/rb.html">RB</a>
+                    <a href="../Equipes/haas.html">Haas</a>
+                    <a href="../Equipes/alpine.html">Alpine</a>
+                    <a href="../Equipes/willians.html">Williams</a>
+                    <a href="../Equipes/stake.html">Stake</a>
+                </div>
+            </div>
+            <a href="../Circuitos/circuitos.html">Circuitos</a>
+            <a href="../Lendas/lendas.html">Lendas</a>
 
-
-
-                <li> <a href="../Circuitos/circuitos.html">Circuitos</a> </li>
-                <li> <a href="../Lendas/lendas.html">Lendas</a> </li>
-            </ul>
         </nav>
     </header>
+
 
 
     <main id="principal">
 
 
-        <h1> Oracle Red Bull Racing</h1>
-
-        
-        <section id="principal-texto">
-            <div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td> Base </td>
-                            <td> Milton Keynes, Reino Unido</td>
-                        </tr>
-
-                        <tr>
-                            <td> Chefe de equipe </td>
-                            <td> Christian Horner</td>
-                        </tr>
-
-                        <tr>
-                            <td> Ano de estreia </td>
-                            <td> 1997</td>
-                        </tr>
-                        <tr>
-                            <td> Vitórias de campeonato </td>
-                            <td> 6</td>
-                        </tr>
-                        <tr>
-                            <td> Pilotos </td>
-                            <td> Max Verstappen e Liam Lawson</td>
-                        </tr>
-
-                    </tbody>
-                </table>
+        <div id="banner">
+            <div id="titulo">
+                <h1>Oracle Red Bull Racing</h1>
+                <h3>Max Verstappen e Yuki Tsunoda</h3>
+                <p>Chefe de equipe - Laurent Mekies</p>
+                <p>1997 - 6 campeonatos</p>
             </div>
-            <img src="Imagens-equipes/redbull.jpg" id="img-principal">
 
-        </section>
+            <img id="carro" src="media/team_imgs/rbr.png">
+        </div>
+
+
+        <div id="pilotos">
+
+            <div class="piloto">
+                <img id="foto" src="media/driver_imgs/verstappen.png">
+                <div>
+                    <h2>33 - Max Verstappen</h2>
+                    <p>País que representa - Holanda</p>
+                    <p>Ano de nascimento - 1997</p>
+                    <p>Ano de estreia - 2015</p>
+                    <p>Vitórias de campeonato - 4</p>
+                    <p>Pódios - 119</p>
+                    <p>Pole Positions - 45</p>
+                    <p>Vitória em corrida - 66</p>
+                    <p>Pole em sprint - 9</p>
+                    <p>Vitória em sprint - 12</p>
+                </div>
+
+            </div>
+            <div class="piloto">
+                <img id="foto" src="media/driver_imgs/tsunoda.png">
+                <div>
+                    <h2>22 - Yuki Tsunoda</h2>
+                    <p>País que representa - Japão</p>
+                    <p>Ano de nascimento - 2000</p>
+                    <p>Ano de estreia - 2021</p>
+                    <p>Vitórias de campeonato - 0</p>
+                    <p>Pódios - 0</p>
+                    <p>Pole Positions - 0</p>
+                    <p>Vitória em corrida - 0</p>
+                    <p>Pole em sprint - 0</p>
+                    <p>Vitória em sprint - 0</p>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
     <footer>
-        <p> By Carolina Braga - Informática 1A <br>Última atualização - 18/02/2025</p>
+        <p> By Carolina Braga - Informática 1A <br>Última atualização - 15/09/2025</p>
         <a id="link" href="https://www.formula1.com">Direitos reservados a Formula One</a>
     </footer>
 </body>

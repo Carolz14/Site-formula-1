@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+:root {
+    --corFundo: #d8d5ca;
+    --fontePrincipal: 'Montserrat', sans-serif;
+    --fonteTitulo: 'Dancing Script', cursive;
+}
+
+
 h2{
-    font-family: "Orbitron", sans-serif;
-    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family:var(--fonteTitulo);
+    color: rgb(255, 255, 255);
     margin-top: 5%;
     text-align: center;
 }
 p {
-    font-family: "Radio Canada", sans-serif;
+    font-family: var(--fontePrincipal);
     font-size: larger;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding-top: 2%;
     text-align: center;
 }
@@ -72,7 +86,7 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-color: #fc2110;
+    background-color: #6c0700;
 }
 
 

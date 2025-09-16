@@ -1,57 +1,63 @@
-#principal-texto {
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+#carro {
+    width: 40%;
+    align-self: flex-end;
+}
+
+#banner {
+    background-image: linear-gradient(to right, #000000, #737373);
+    margin: 2% 10%;
+    border-radius: 20px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: hsla(0, 1%, 17%, 0.4);
-    
-    border-radius: 20px;
+
+    flex-direction: column;
+}
+
+#titulo {
+    margin: 8px;
+}
+
+.dropdown .dropbtn {
+    color: rgb(0, 0, 0);
 }
 
 h1 {
-    text-align: center;
-    margin-top: 5%;
-}
-
-table {
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-td,
-th {
-    padding: 10px;
-    text-align: start;
-    font-family: "Radio Canada", sans-serif;
-    text-decoration: none;
-    font-size: 20px;
     color: white;
-    padding-top: 1%;
+    font-size: 450%;
+    margin: 5px;
 }
 
-img {
-    width: 40%;
+h3 {
+    color: white;
+    margin: 2px;
+}
+
+#equipe,
+.piloto {
+    margin: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 250px;
+    height: 350px;
     border-radius: 20px;
 }
 
-@media (max-width: 879px) {
-    #principal-texto {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    h1 {
-        font-size: 50%;
-    }
-    img {
-        margin-top: 10%;
-        width: 70%;
-    }
+p {
+    font-size: 25px;
+}
 
-    td,
-    th {
-        font-size: 100%;
-    }
+#foto {
+    width: 402px;
+    height: 607px;
+    border-radius: 20px;
+}
+
+#banner #titulo p {
+    color: white;
+    font-size:15px;
 }

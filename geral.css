@@ -1,90 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+:root {
+    --corFundo: #d8d5ca;
+    --fontePrincipal: 'Montserrat', sans-serif;
+    --fonteTitulo: 'Dancing Script', cursive;
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;
 }
 
+
 /*menu*/
 
 header {
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 100;
-  margin-right: 10%;
-  margin-left: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 #img-cabeçalho {
-  width: 150px;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    width: 150px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-header .navbar ul {
-  list-style: none;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  z-index: 100;
+.navbar {
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+
 }
 
-header .navbar ul li a {
-  font-size: 18px;
-  padding: 20px;
-  color: white;
-  display: block;
-  text-decoration: none;
-  z-index: 100;
+.navbar a {
+
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+
+    overflow: hidden;
+    text-align: center;
+
+    padding: 14px 16px;
+}
+
+.dropdown .dropbtn {
+    color: rgb(251, 251, 251);
+    padding: 14px 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgba(128, 128, 128, 0.37);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--corFundo);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown .dropbtn{
+    color: rgb(0, 0, 0);
 }
 
 
-
-header .navbar ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.151);
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-header .navbar ul li ul {
-  position: absolute;
-  background: #000000;
-  display: none;
-}
 
-header .navbar ul li ul li {
-  width: 100%;
-}
-
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul {
-  display: initial;
-}
 
 #principal {
   margin-bottom: 48px;
-  border-top: 0.4px solid white;
   margin-left: 0;
   margin-right: 0;
 }
 
 body {
-  background-color: black;
+  background-color: var(--corFundo);
 }
 
 /* textos*/
-li {
-  font-family: "Orbitron", sans-serif;
-  font-size: 18px;
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
 }
 
-h1 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 45px;
-  color: white;
+p,h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+}
+
 
 /* footer*/
 footer {
@@ -94,80 +148,78 @@ footer {
 footer p, #link {
   margin: 20px;
   font-size: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: justify;
-  font-family: "Radio Canada", sans-serif;
+  font-family: var(--fontePrincipal);
 }
+
 
 .hamburger {
-  opacity: 0;
+    opacity: 0;
 }
 
-@media (max-width: 879px) {
-  header .navbar ul {
-    flex-direction: column;
-  }
+@media (max-width: 880px) {
 
-  .hamburger {
-    display: inline-block;
-    height: 2em;
-    width: 2em;
-    border-radius: 3px;
-    border: 1px solid silver;
-    text-align: center;
-    line-height: 2em;
-    box-sizing: border-box;
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.623);
-  }
+    .hamburger {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        border-radius: 3px;
+        border: 1px solid silver;
+        text-align: center;
+        line-height: 2em;
+        box-sizing: border-box;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.623);
+    }
 
-  .hamburger:hover {
-    border-color: gray;
-  }
 
-  .navbar {
-    position: absolute;
-    right: 10px;
-    top: 60px;
-    z-index: 10;
-    width: 200px;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid silver;
-    box-shadow: 2px 2px 3px silver;
-    opacity: 0;
-    transition: all 200ms ease-out;
-  }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 10%;
+        background-color: var(--corFundo);
+        border: 1px solid silver;
+        padding: 10px;
+        width: 200px;
+        z-index: 10;
+        align-items: center;
+    }
 
-  header.menu-visivel > .navbar {
-    top: 60px;
-    opacity: 1;
-  }
+    .navbar a {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
 
-  header.menu-visivel > main {
-    right: 200px;
-  }
 
-  header.menu-visivel {
-    overflow-x: hidden;
-  }
 
-  header .navbar ul li ul {
-    position: absolute;
-    right: 0;
-    width: 200px;
-    background: #000000;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid silver;
-    box-shadow: 2px 2px 3px silver;
-    padding: 0;
-  }
-  header .navbar ul li:focus-within > ul,
-  header .navbar ul li:active > ul {
-    display: initial;
-  }
-  
-  #alterna-menu {
-    margin: 0 0.5em 0 0;
-    cursor: pointer;
-  }
+    header.menu-visivel .navbar {
+        top: 60px;
+        display: flex;
+    }
+
+    header.menu-visivel>main {
+        right: 200px;
+    }
+
+    header.menu-visivel {
+        overflow-x: hidden;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        position: relative;
+        display: none;
+        background-color: var(--corFundo);
+        box-shadow: none;
+        border: 1px solid #b3b3b3;
+    }
+
 }

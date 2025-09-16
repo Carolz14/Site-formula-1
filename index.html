@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1</title>
     <link rel="icon" href="icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="geral.css">
     <script src="script.js" defer></script>
     <script src="menu.js" defer></script>
 </head>
+<style>
+    a {
+        color: white;
+    }
+
+    .dropdown .dropbtn {
+        color: white;
+    }
+</style>
 
 <body>
 
@@ -22,44 +29,28 @@
         <img id="img-cabeçalho" src="icon.png">
         <span id="alterna-menu" class="hamburger"><span>☰</span></span>
         <nav class="navbar">
-            <ul>
-                <li> <a href="index.html">Início</a> </li>
+            <a href="index.html">Início</a>
 
-                <li> <a href="#equipes">Equipes</a>
-                    <ul>
-                        <li> <a href="Equipes/redbull.html">Red Bull Racing</a></li>
-                        <li> <a href="Equipes/ferrari.html">Ferrari</a></li>
-                        <li> <a href="Equipes/mclaren.html">McLaren</a></li>
-                        <li> <a href="Equipes/mercedes.html">Mercedes</a></li>
-                        <li> <a href="Equipes/aston martin.html">Aston Martin</a></li>
-                        <li> <a href="Equipes/rb.html">RB</a></li>
-                        <li> <a href="Equipes/haas.html">Haas</a></li>
-                        <li> <a href="Equipes/alpine.html">Alpine</a></li>
-                        <li> <a href="Equipes/willians.html">Williams</a></li>
-                        <li> <a href="Equipes/stake.html">Stake</a></li>
-                    </ul>
-                </li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Equipes</a>
 
-                <li> <a href=""> Pilotos</a>
+                <div class="dropdown-content">
 
-                    <ul>
-                        <li> <a href="Pilotos/MV & SP.html">Pilotos RBR</a></li>
-                        <li> <a href="Pilotos/CS & CL.html">Pilotos Ferrari</a></li>
-                        <li> <a href="Pilotos/LN & OP.html"> Pilotos McLaren</a></li>
-                        <li> <a href="Pilotos/GR & LH.html">Pilotos Mercedes</a></li>
-                        <li> <a href="Pilotos/FA & LS.html">Pilotos Aston Martin</a></li>
-                        <li> <a href="Pilotos/DR & YT & LL.html">Pilotos RB</a></li>
-                        <li> <a href="Pilotos/KM & NH.html">Pilotos Haas</a></li>
-                        <li> <a href="Pilotos/EO & PG.html">Pilotos Alpine</a></li>
-                        <li> <a href="Pilotos/AA & FC & LS.html">Pilotos Williams</a></li>
-                        <li> <a href="Pilotos/VB & ZG.html">Pilotos Stake</a></li>
-                    </ul>
-                </li>
+                    <a href="Equipes/redbull.html">Red Bull Racing</a>
+                    <a href="Equipes/ferrari.html">Ferrari</a>
+                    <a href="Equipes/mclaren.html">McLaren</a>
+                    <a href="Equipes/mercedes.html">Mercedes</a>
+                    <a href="Equipes/aston martin.html">Aston Martin</a>
+                    <a href="Equipes/rb.html">RB</a>
+                    <a href="Equipes/haas.html">Haas</a>
+                    <a href="Equipes/alpine.html">Alpine</a>
+                    <a href="Equipes/willians.html">Williams</a>
+                    <a href="Equipes/stake.html">Stake</a>
+                </div>
+            </div>
+            <a href="Circuitos/circuitos.html">Circuitos</a>
+            <a href="Lendas/lendas.html">Lendas</a>
 
-
-                <li> <a href="Circuitos/circuitos.html">Circuitos</a> </li>
-                <li> <a href="Lendas/lendas.html">Lendas</a> </li>
-            </ul>
         </nav>
     </header>
 
@@ -80,52 +71,63 @@
         <section id="equipes">
             <h1 id="titulo-equipe"> Equipes</h1>
 
-            <div id="botao"><button id="botao1"><img src="Imagens-principal/arrow.png"> </button>
 
-                <div class="card">
+            <div class="wrapper">
+                <div class="container">
 
-                    <img src="Imagens-principal/redbull.png" class="img on">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
 
-                    <img src="Imagens-principal/ferrari.png" class="img">
+                    </label>
 
-                    <img src="Imagens-principal/mclaren.png " class="img">
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
 
-                    <img src="Imagens-principal/mercedes.png " class="img">
+                    </label>
 
-                    <img src="Imagens-principal/astonmartin.png " class="img">
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
 
-                    <img src="Imagens-principal/rb.png " class="img">
+                    </label>
 
-                    <img src="Imagens-principal/haas.png" class="img">
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="card">
 
-                    <img src="Imagens-principal/alpine.png" class="img">
+                    </label>
+                     <input type="radio" name="slide" id="c5">
+                    <label for="c5" class="card">
 
-                    <img src="Imagens-principal/willians.png" class="img">
+                    </label>
+                     <input type="radio" name="slide" id="c6">
+                    <label for="c6" class="card">
 
-                    <img src="Imagens-principal/stake.png" class="img">
+                    </label>
+                     <input type="radio" name="slide" id="c7">
+                    <label for="c7" class="card">
 
+                    </label>
+                     <input type="radio" name="slide" id="c8">
+                    <label for="c8" class="card">
 
+                    </label>
+                     <input type="radio" name="slide" id="c9">
+                    <label for="c9" class="card">
+
+                    </label>
+                     <input type="radio" name="slide" id="c10">
+                    <label for="c10" class="card">
+
+                    </label>
                 </div>
-
-                <button id="botao2"><img src="Imagens-principal/arrow.png"> </button>
             </div>
 
-
-
         </section>
 
 
-        <h1 id="titulo-video"> A melhor corrida da temporada</h1>
-        <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/b0yb1zH2m7c?si=ZAPDszvJuWMlrZjH"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
     </main>
 
     <footer>
-        <p> By Carolina Braga - Informática 1A <br>Última atualização - 18/10/2024</p>
+        <p> By Carolina Braga <br>Última atualização - 15/09/2025</p>
         <a id="link" href="https://www.formula1.com">Direitos reservados a Formula One</a>
 
     </footer>
