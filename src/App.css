@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+
+
+
+:root {
+    --corFundo: #0f1012;
+    --fontePrincipal: 'Montserrat', sans-serif;
+    --fonteTitulo: 'Baumans', system-ui;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+    font-family: var(--fontePrincipal);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+p,h3{
+    font-family: var(--fontePrincipal);
+    font-size: 18px;
+}
+
+h3{
+    font-family: var(--fontePrincipal);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+h1,h2{
+    font-family: var(--fonteTitulo);
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+}
+
