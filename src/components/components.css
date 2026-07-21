@@ -18,7 +18,6 @@ header {
 }
 
 .navbar {
-  overflow: hidden;
   justify-content: space-between;
   display: flex;
   gap: 10px;
@@ -35,19 +34,18 @@ header {
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 2px;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   cursor: pointer;
   font-size: 18px;
   padding: 14px 16px;
 }
 
 .dropdown {
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   padding: 14px 0;
+  height: 100%;
 }
-
-
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -63,7 +61,6 @@ header {
   z-index: 100;
   margin-top: 15px;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .dropdown-content a {
@@ -98,53 +95,54 @@ footer p,
 }
 
 #alterna-menu {
-    display: none;
-    font-size: 28px; 
-    cursor: pointer;
-    color: white; }
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
- header {
-        margin: 0 5%; 
-    }
+  header {
+    margin: 0 5%;
+  }
 
-    #alterna-menu {
-        display: block;
-    }
+  #alterna-menu {
+    display: block;
+  }
 
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px; 
-        left: 0;
-        right: 0;
-      
-        background-color: #15151e; 
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-        z-index: 99;
-        padding-bottom: 20px;
-        border-radius: 0 0 12px 12px; 
-    }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
 
-    .navbar.open {
-        display: flex;
-    }
+    background-color: #15151e;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    padding-bottom: 20px;
+    border-radius: 0 0 12px 12px;
+  }
 
-    .dropdown .dropdown-content {
-        position: static;
-        box-shadow: none;
-        display: none; 
-        background-color: transparent;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: flex;
-        flex-direction: column;
-    }
+  .navbar.open {
+    display: flex;
+  }
 
-    .dropdown-content a {
-        text-align: center; 
-        padding-left: 0;
-    }
+  .dropdown .dropdown-content {
+    position: static;
+    box-shadow: none;
+    display: none;
+    background-color: transparent;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+    padding-left: 0;
+  }
 }
