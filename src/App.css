@@ -64,3 +64,17 @@ h2 {
   font-weight: normal;
   color: white;
 }
+
+@media (max-width: 879px) {
+  h1, h2 {
+    font-size: 30px;
+  }
+  
+  #title h1 {
+    font-size: 35px;
+  }
+  
+  #d-infos h2 {
+    font-size: 40px;
+  }
+}

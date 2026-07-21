@@ -6,6 +6,8 @@
   background-size: cover;
   background-position: 50%;
   width: 100%;
+  
+  min-height: 100vh; 
   height: 100vh;
 }
 
@@ -70,8 +72,6 @@ p {
   width: 200px;
 }
 
-/* carrossel */
-
 #equipes {
   display: flex;
   flex-direction: column;
@@ -80,9 +80,11 @@ p {
   margin-top: 22%;
 }
 
+
 @media (max-width: 879px) {
   #principal-texto {
     margin-top: 15%;
+    margin-right: 10%; 
   }
 
   h1 {
@@ -90,17 +92,36 @@ p {
   }
 
   p {
-    margin-right: 32%;
+    margin-right: 0%; 
   }
 
   #titulo-equipe {
     text-align: center;
     margin-right: 0;
   }
+  
   #equipes {
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 85%;
     align-items: center;
     justify-content: center;
+  }
+
+ 
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .wrapper {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .card {
+    width: 65px;
+    height: 250px;
+    margin: 5px;
   }
 }

@@ -91,6 +91,7 @@
   align-items: center;
   flex-direction: row;
   margin: 7% 1%;
+  z-index: 100;
 }
 
 #d-stats div {
@@ -103,4 +104,60 @@
   -webkit-backdrop-filter: blur(10.7px);
   border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 1%;
+}
+
+
+@media (max-width: 879px) {
+  #team-detail {
+    align-items: center;
+    text-align: center;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  #car {
+    width: 90%;
+    align-self: center;
+  }
+
+  #d-cont {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  #d-infos {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
+  #d-center {
+    position: relative;
+    left: 0;
+    transform: none;
+    justify-content: center;
+    height: 250px;
+    margin-top: 2rem;
+  }
+
+  #d-number {
+    font-size: 1500%; 
+  }
+
+  #d-img-cont {
+    height: 100%;
+  }
+
+  
+  #d-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #d-stats div {
+    width: 90%;
+  }
 }
