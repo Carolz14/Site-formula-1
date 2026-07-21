@@ -95,6 +95,7 @@
 }
 
 #d-stats div {
+  position: relative;
   width: 250px;
   height: 100px;
   background: rgba(255, 255, 255, 0.068);
