@@ -1,4 +1,4 @@
-body {
+#div-body {
   background-color: var(--corFundo);
   background-image: url(../assets/fundo.png);
   position: relative;

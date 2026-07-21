@@ -9,41 +9,45 @@ export default function HomePage() {
 
   return (
     <>
-      <Header />
+      <div id="div-body">
+        <Header />
 
-      <main id="principal">
-        <section id="principal-texto">
-          <div>
-            <h1>What is Formula 1?</h1>
-            <p>
-              Launched in 1950, Formula 1 is a motorsport category in which 10
-              teams and 20 drivers compete to win the Constructors' and Drivers'
-              championships, respectively. Today, an annual season visits more
-              than 20 locations around the world, racing on various existing
-              circuits.
-            </p>
-          </div>
-        </section>
-
-        <section id="equipes">
-          <h1 id="titulo-equipe">Teams</h1>
-
-          <div className="wrapper">
-            <div className="container">
-              {f1Teams.map((team) => (
-                <div
-                  key={team.id}
-                  className={`card ${openCard === team.id ? "open" : ""}`}
-                  style={{ backgroundImage: `url(${team.logoImage})` }}
-                  onClick={() => setOpenCard(openCard === team.id ? null : team.id)}
-                />
-              ))}
+        <main id="principal-home">
+          <section id="principal-texto">
+            <div>
+              <h1>What is Formula 1?</h1>
+              <p>
+                Launched in 1950, Formula 1 is a motorsport category in which 10
+                teams and 20 drivers compete to win the Constructors' and
+                Drivers' championships, respectively. Today, an annual season
+                visits more than 20 locations around the world, racing on
+                various existing circuits.
+              </p>
             </div>
-          </div>
-        </section>
-      </main>
+          </section>
 
-      <Footer />
+          <section id="equipes">
+            <h1 id="titulo-equipe">Teams</h1>
+
+            <div className="wrapper">
+              <div className="container">
+                {f1Teams.map((team) => (
+                  <div
+                    key={team.id}
+                    className={`card ${openCard === team.id ? "open" : ""}`}
+                    style={{ backgroundImage: `url(${team.logoImage})` }}
+                    onClick={() =>
+                      setOpenCard(openCard === team.id ? null : team.id)
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <Footer />
+      </div>
     </>
   );
 }

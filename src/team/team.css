@@ -1,0 +1,106 @@
+#body-team {
+  background: linear-gradient(
+    180deg,
+    #2b2b2b 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 20%,
+
+    var(--teamColor) 45%,
+    var(--teamColor) 55%,
+
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#car {
+  width: 40%;
+  align-self: flex-start;
+  margin-bottom: 2%;
+}
+#title {
+  margin: 8px;
+  text-align: end;
+}
+
+#team-detail {
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  flex-direction: column;
+  font-weight: lighter;
+}
+
+#title h1 {
+  font-size: 50px;
+}
+
+#d-infos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-wrap: no-wrap;
+  margin: 0;
+}
+#d-infos {
+  margin-left: 1%;
+}
+
+.d-info {
+  width: 100%;
+  text-align: end;
+  margin-right: 0;
+}
+
+#d-cont {
+  margin: 2%;
+  display: flex;
+  position: relative;
+}
+
+#d-center {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#d-number {
+  font-family: var(--fonteDetalhe);
+  font-size: 3000%;
+  font-weight: bolder;
+  margin: 0;
+}
+
+#d-img-cont {
+  overflow: hidden;
+  height: 80%;
+  position: absolute;
+}
+#d-image {
+  object-fit: cover;
+  height: 270%;
+  object-position: top;
+}
+
+#d-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 7% 1%;
+}
+
+#d-stats div {
+  width: 250px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.068);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 1%;
+}
